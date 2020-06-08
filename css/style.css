@@ -7,46 +7,17 @@
           box-shadow: 0 4px 8px 0 #c3eeff, 0 50px 50px 0 #c3eeff;
 }
 
-#cloud {
-  position: absolute;
-  top: -55px;
-  left: -150px;
-  width: 50%;
-}
-
-.shape {
-  -webkit-animation: ani 10s infinite;
-          animation: ani 10s infinite;
-}
-
-@-webkit-keyframes ani {
-  0% {
-    left: -25px;
-  }
-  50% {
-    left: 30px;
-  }
-  100% {
-    left: -25px;
-  }
-}
-
-@keyframes ani {
-  0% {
-    left: -25px;
-  }
-  50% {
-    left: 30px;
-  }
-  100% {
-    left: -25px;
-  }
-}
-
 #logo {
   position: absolute;
   top: -150px;
   right: -200px;
+  width: 50%;
+}
+
+#cloud {
+  position: absolute;
+  top: -55px;
+  left: -80px;
   width: 50%;
 }
 
@@ -376,4 +347,4 @@ footer {
 		box-shadow: 0 0 0 0 rgb(240, 255, 104);
 	}
 }*/
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
