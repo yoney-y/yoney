@@ -1,4 +1,10 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Bellota',"Trebuchet MS", Helvetica, sans-serif !important;
+}
+
 .hero {
   background: #c3eeff;
   height: 87vh;
@@ -17,6 +23,60 @@
 .shape {
   -webkit-animation: ani 10s infinite;
           animation: ani 10s infinite;
+}
+
+.arrow-pulse-down:after {
+  content: "🡣";
+  /* Here you can change the style of the arrow */
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 35px;
+  -webkit-animation: arrow-pulse-down 700ms linear infinite;
+          animation: arrow-pulse-down 700ms linear infinite;
+}
+
+@-webkit-keyframes arrow-pulse-down {
+  0% {
+    bottom: 40px;
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-pulse-down {
+  0% {
+    bottom: 40px;
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes ani {
@@ -61,18 +121,12 @@
   height: 100vh;
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-  font-family: 'Bellota', cursive !important;
+img {
+  width: 100%;
 }
 
 h1 {
   margin: 2em 0;
-}
-
-img {
-  width: 100%;
 }
 
 .container {
@@ -101,11 +155,27 @@ img {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   margin-top: 1em;
+  z-index: 7;
 }
 
 .content h2 {
   margin: .2em .5em;
   font-size: 1em;
+}
+
+.content span {
+  color: white;
+  z-index: 8;
+  padding: 10px;
+}
+
+.design {
+  -webkit-transition: margin 0.3s, -webkit-filter 0.3s;
+  transition: margin 0.3s, -webkit-filter 0.3s;
+  transition: margin 0.3s, filter 0.3s;
+  transition: margin 0.3s, filter 0.3s, -webkit-filter 0.3s;
+  -webkit-box-shadow: 1px 1px 5px #cccccc;
+          box-shadow: 1px 1px 5px #cccccc;
 }
 
 @media (min-width: 768px) {
@@ -173,18 +243,13 @@ img {
   #cloud {
     display: none;
   }
-}
-
-.design {
-  -webkit-transition: margin 0.3s, -webkit-filter 0.3s;
-  transition: margin 0.3s, -webkit-filter 0.3s;
-  transition: margin 0.3s, filter 0.3s;
-  transition: margin 0.3s, filter 0.3s, -webkit-filter 0.3s;
-  -webkit-box-shadow: 1px 1px 5px #cccccc;
-          box-shadow: 1px 1px 5px #cccccc;
+  .grid-item {
+    margin-top: 30px;
+  }
 }
 
 footer {
+  margin-top: 30px;
   overflow: hidden;
 }
 
@@ -214,60 +279,6 @@ footer {
 .social > a:hover {
   text-decoration: none !important;
   color: #b39bb3;
-}
-
-.arrow-pulse-down:after {
-  content: "🡣";
-  /* Here you can change the style of the arrow */
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  font-size: 35px;
-  -webkit-animation: arrow-pulse-down 700ms linear infinite;
-          animation: arrow-pulse-down 700ms linear infinite;
-}
-
-@-webkit-keyframes arrow-pulse-down {
-  0% {
-    bottom: 40px;
-    opacity: 0;
-  }
-  25% {
-    opacity: .25;
-  }
-  50% {
-    opacity: .5;
-  }
-  75% {
-    opacity: .75;
-  }
-  100% {
-    bottom: 20px;
-    opacity: 1;
-  }
-}
-
-@keyframes arrow-pulse-down {
-  0% {
-    bottom: 40px;
-    opacity: 0;
-  }
-  25% {
-    opacity: .25;
-  }
-  50% {
-    opacity: .5;
-  }
-  75% {
-    opacity: .75;
-  }
-  100% {
-    bottom: 20px;
-    opacity: 1;
-  }
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
