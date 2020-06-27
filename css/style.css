@@ -1,11 +1,16 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Bellota',"Trebuchet MS", Helvetica, sans-serif !important;
 }
 
+.logo-box {
+  position: relative;
+}
+
 .hero {
+  position: relative;
   background: #c3eeff;
   height: 87vh;
   width: 100vw;

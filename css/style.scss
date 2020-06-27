@@ -1,12 +1,16 @@
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Bellota',"Trebuchet MS", Helvetica, sans-serif !important;
   
   //font-family: 'Montserrat';
 }
+.logo-box{
+  position: relative;
+}
 
 .hero{
+  position: relative;
     background: #c3eeff;
     height: 87vh;
     width: 100vw;
@@ -191,6 +195,8 @@ h1 {
       left: 15vw;
       width: 50%;
     }
+    .hero{
+      position: relative;
     #logo {
     
       position: absolute;
