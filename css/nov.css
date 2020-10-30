@@ -230,8 +230,8 @@ h1 {
   .icon-bar {
     display: none;
   }
-  .design {
-    margin-top: 15px;
+  .arrow {
+    margin-top: 20px;
   }
   #intro {
     position: absolute;
@@ -242,17 +242,20 @@ h1 {
   .hero {
     position: relative;
   }
-  .hero #logo {
+  #logo {
     position: absolute;
     top: -180px;
     right: -260px;
     width: 50%;
   }
-  .hero #cloud {
+  #cloud {
     display: none;
   }
-  .hero .grid-item {
+  .grid-item {
     margin-top: 30px;
+  }
+  .design {
+    margin-top: 15px;
   }
 }
 
